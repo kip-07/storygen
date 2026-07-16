@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+llm:
+  nvidia:
+    base-url: https://integrate.api.nvidia.com/v1
+    api-key: ${NVIDIA_API_KEY}
+    model: nvidia/nemotron-3-ultra-550b-a55b
+    max-tokens: 16384
+
+storage:
+  directory: ./generated

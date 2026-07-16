@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryGen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>StoryGen</h1>
+        <form id="storyForm">
+            <label for="prompt">Story Prompt</label>
+            <textarea id="prompt" name="prompt" rows="4"
+                      placeholder="e.g. a lighthouse keeper who talks to the sea"
+                      required maxlength="2000"></textarea>
+
+            <button type="submit" id="generateBtn">Generate Story</button>
+        </form>
+
+        <div id="error" class="error" style="display:none;"></div>
+
+        <div id="result" style="display:none;">
+            <h2>Preview</h2>
+            <iframe id="preview"></iframe>
+
+            <a id="downloadLink" class="download-link" style="display:none;">Download HTML</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
